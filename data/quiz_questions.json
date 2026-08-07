@@ -1,0 +1,77 @@
+[
+  {
+    "question": "What is phishing?",
+    "options": ["A type of computer virus", "A fraudulent attempt to obtain sensitive information", "A firewall setting", "A type of encryption"],
+    "answer": 1
+  },
+  {
+    "question": "Which of these makes a password strongest?",
+    "options": ["Your birthdate", "A single common word", "A long mix of letters, numbers & symbols", "Your pet's name"],
+    "answer": 2
+  },
+  {
+    "question": "What does 2FA stand for?",
+    "options": ["Two Factor Authentication", "Two File Access", "Twice Fast Access", "Two Firewall Applications"],
+    "answer": 0
+  },
+  {
+    "question": "What should you do if you receive an email asking for your password?",
+    "options": ["Reply with your password", "Delete/report it and never share your password", "Forward it to friends", "Click all links in it"],
+    "answer": 1
+  },
+  {
+    "question": "What is ransomware?",
+    "options": ["Free antivirus software", "Malware that encrypts files and demands payment", "A type of firewall", "A safe browsing tool"],
+    "answer": 1
+  },
+  {
+    "question": "Which of the following is a sign of a phishing website?",
+    "options": ["Valid HTTPS certificate only", "Misspelled domain name", "Official company logo", "Fast loading speed"],
+    "answer": 1
+  },
+  {
+    "question": "What does a VPN primarily do?",
+    "options": ["Speeds up your computer", "Encrypts your internet connection", "Removes viruses", "Blocks pop-up ads only"],
+    "answer": 1
+  },
+  {
+    "question": "Is it safe to use the same password for multiple accounts?",
+    "options": ["Yes, always", "No, it increases risk if one account is breached", "Only for social media", "Only for email"],
+    "answer": 1
+  },
+  {
+    "question": "What is social engineering in cybersecurity?",
+    "options": ["Designing secure networks", "Manipulating people into revealing confidential info", "Building firewalls", "Writing antivirus software"],
+    "answer": 1
+  },
+  {
+    "question": "What should you check before clicking a link in an email?",
+    "options": ["The sender's profile picture", "The actual URL by hovering over it", "The email's font size", "Nothing, just click"],
+    "answer": 1
+  },
+  {
+    "question": "What is a firewall used for?",
+    "options": ["Cooling down your PC", "Monitoring and controlling network traffic", "Speeding up downloads", "Storing passwords"],
+    "answer": 1
+  },
+  {
+    "question": "Public Wi-Fi networks are generally:",
+    "options": ["Completely secure", "Less secure and risky for sensitive transactions", "Only for gaming", "Faster than home Wi-Fi"],
+    "answer": 1
+  },
+  {
+    "question": "What is the safest way to store multiple strong passwords?",
+    "options": ["Write them on a sticky note", "Use a password manager", "Use the same password everywhere", "Save them in an unencrypted text file"],
+    "answer": 1
+  },
+  {
+    "question": "What is malware?",
+    "options": ["A type of hardware", "Software designed to harm or exploit systems", "A network cable", "An antivirus brand"],
+    "answer": 1
+  },
+  {
+    "question": "Which file attachment type is most commonly used to spread malware via email?",
+    "options": [".jpg", ".exe", ".mp3", ".png"],
+    "answer": 1
+  }
+]

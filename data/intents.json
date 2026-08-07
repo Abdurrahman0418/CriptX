@@ -1,0 +1,246 @@
+{
+  "intents": [
+    {"tag": "greeting", "patterns": ["hi", "hello", "hey", "good morning", "good evening", "is anyone there", "hey there", "howdy", "greetings", "what's up", "yo"],
+     "responses": ["Hello! I'm CriptX, your personal AI cybersecurity assistant. Ask me about hacking techniques, malware, defenses, certifications, or request a code snippet!", "Hi there! I'm here 24/7 to help you understand cybersecurity and ethical hacking concepts.", "Hey! Ready to dive into cybersecurity? Ask me anything, from phishing to penetration testing."]},
+
+    {"tag": "goodbye", "patterns": ["bye", "goodbye", "see you later", "exit", "quit", "talk to you later", "good night", "close chat"],
+     "responses": ["Goodbye! Stay safe online.", "See you soon! Keep your systems patched.", "Bye! Remember: think before you click."]},
+
+    {"tag": "thanks", "patterns": ["thanks", "thank you", "that helps", "thanks a lot", "appreciate it", "thank you so much", "nice one"],
+     "responses": ["You're welcome! Stay cyber safe.", "Happy to help! Ask me anything else.", "Anytime! Cybersecurity awareness matters."]},
+
+    {"tag": "bot_identity", "patterns": ["who are you", "what are you", "what is your name", "tell me about yourself", "are you a bot", "are you human"],
+     "responses": ["I'm CriptX, an AI-powered cybersecurity awareness assistant built with a machine learning intent-classification model. I can explain hacking concepts, cyber defenses, certifications, and even give you educational code snippets.", "I'm your personal cybersecurity assistant — an ML chatbot trained specifically on cybersecurity and ethical hacking topics."]},
+
+    {"tag": "capabilities", "patterns": ["what can you do", "how can you help me", "what do you know", "help", "what topics can you discuss"],
+     "responses": ["I can explain malware, network attacks, web attacks, social engineering, cryptography, ethical hacking, certifications, cyber laws, and more. I can also give you quizzes, security tips, a phishing-link scanner, and educational Python code snippets (hashing, encryption, password strength checking). I won't provide actual exploit/attack code, since that could cause real harm.", "Ask me to define a term, explain how an attack works, recommend defenses, or write you a safe educational code snippet — I'm built to be your cybersecurity study partner."]},
+
+    {"tag": "get_time", "patterns": ["what time is it", "current time", "tell me the time", "what's the time now"],
+     "responses": ["[[DYNAMIC_TIME]]"]},
+
+    {"tag": "get_date", "patterns": ["what is the date today", "current date", "what's today's date", "tell me the date"],
+     "responses": ["[[DYNAMIC_DATE]]"]},
+
+    {"tag": "tell_joke", "patterns": ["tell me a joke", "make me laugh", "cybersecurity joke", "hacker joke", "say something funny"],
+     "responses": ["[[DYNAMIC_JOKE]]"]},
+
+    {"tag": "what_is_phishing", "patterns": ["what is phishing", "define phishing", "explain phishing", "phishing meaning", "tell me about phishing"],
+     "responses": ["Phishing is a cyberattack where attackers impersonate a trusted entity (bank, company, colleague) via email, SMS, or fake websites to trick you into revealing sensitive information like passwords or card numbers.", "Phishing is a social-engineering scam using fake but convincing messages to steal your credentials or install malware via a malicious link or attachment."]},
+
+    {"tag": "how_to_avoid_phishing", "patterns": ["how to avoid phishing", "how do i prevent phishing", "how to protect from phishing", "phishing prevention tips", "how to spot a phishing email"],
+     "responses": ["To avoid phishing: never click links from unknown senders, verify the sender's actual email domain, watch for urgent/threatening language, hover over links before clicking, never share OTPs, and enable 2FA on every account.", "Red flags of phishing include generic greetings, spelling mistakes, mismatched URLs, unexpected attachments, and requests for urgent action. When in doubt, contact the organization directly via their official website or phone number."]},
+
+    {"tag": "spear_phishing", "patterns": ["what is spear phishing", "spear phishing meaning", "difference between phishing and spear phishing", "targeted phishing attack"],
+     "responses": ["Spear phishing is a targeted phishing attack aimed at a specific person or organization, using personal details (name, job title, colleagues) gathered beforehand to appear highly convincing — much more dangerous than generic mass phishing."]},
+
+    {"tag": "whaling", "patterns": ["what is whaling attack", "whaling phishing meaning", "ceo fraud"],
+     "responses": ["Whaling is a spear-phishing attack that specifically targets senior executives (CEOs, CFOs) to trick them into authorizing fraudulent wire transfers or leaking sensitive company data — also known as 'CEO fraud'."]},
+
+    {"tag": "vishing_smishing", "patterns": ["what is vishing", "what is smishing", "voice phishing", "sms phishing"],
+     "responses": ["Vishing (voice phishing) uses phone calls impersonating banks or authorities to extract information. Smishing (SMS phishing) does the same via text messages with malicious links. Never share OTPs or account details over calls or texts."]},
+
+    {"tag": "what_is_malware", "patterns": ["what is malware", "define malware", "explain malware", "malware meaning", "types of malware"],
+     "responses": ["Malware (malicious software) is any program intentionally designed to damage, disrupt, or gain unauthorized access to a system. Common types include viruses, worms, trojans, ransomware, spyware, adware, and rootkits."]},
+
+    {"tag": "what_is_virus", "patterns": ["what is a computer virus", "define computer virus", "how does a virus work", "virus vs worm"],
+     "responses": ["A computer virus is malicious code that attaches itself to legitimate files or programs and spreads when that file is executed or shared, requiring human action to propagate — unlike worms, which spread automatically across networks."]},
+
+    {"tag": "what_is_worm", "patterns": ["what is a computer worm", "define worm malware", "how do worms spread"],
+     "responses": ["A worm is self-replicating malware that spreads across networks without needing a host file or human interaction, often exploiting unpatched software vulnerabilities — famous examples include WannaCry and Conficker."]},
+
+    {"tag": "what_is_trojan", "patterns": ["what is a trojan horse", "trojan malware meaning", "how do trojans work"],
+     "responses": ["A trojan disguises itself as legitimate software to trick users into installing it, then secretly performs malicious actions like stealing data or opening backdoors — it does not self-replicate like a virus or worm."]},
+
+    {"tag": "what_is_ransomware", "patterns": ["what is ransomware", "define ransomware", "explain ransomware", "ransomware attack", "how does ransomware work"],
+     "responses": ["Ransomware is malware that encrypts a victim's files or locks their system, with attackers demanding payment (often in cryptocurrency) for the decryption key. Regular offline backups and prompt patching are the best defenses — never pay the ransom, as it doesn't guarantee recovery and funds further attacks."]},
+
+    {"tag": "what_is_spyware", "patterns": ["what is spyware", "define spyware", "how does spyware work"],
+     "responses": ["Spyware secretly monitors user activity — keystrokes, browsing habits, screenshots — and sends that data to attackers, often bundled with free software downloads. Use reputable antivirus/anti-spyware tools and avoid untrusted downloads."]},
+
+    {"tag": "what_is_keylogger", "patterns": ["what is a keylogger", "define keylogger", "how does a keylogger work", "how to detect a keylogger"],
+     "responses": ["A keylogger records every keystroke a user types, capturing passwords and sensitive data, and sends it to an attacker. Note: I can explain how they work conceptually for awareness, but I won't provide working keylogger code, as that's a surveillance/attack tool. Defend against them with updated antivirus, on-screen keyboards for sensitive logins, and 2FA."]},
+
+    {"tag": "what_is_rootkit", "patterns": ["what is a rootkit", "define rootkit", "how do rootkits hide"],
+     "responses": ["A rootkit is malware designed to gain and maintain privileged (root/admin) access to a system while hiding its presence from the OS and security tools, making it extremely hard to detect and remove — often requiring a full OS reinstall."]},
+
+    {"tag": "what_is_adware", "patterns": ["what is adware", "define adware", "adware meaning"],
+     "responses": ["Adware automatically displays or downloads unwanted advertisements, often bundled with free software. While usually less dangerous than other malware, it can slow systems down and sometimes tracks browsing behavior without consent."]},
+
+    {"tag": "what_is_botnet", "patterns": ["what is a botnet", "define botnet", "how do botnets work", "zombie computers"],
+     "responses": ["A botnet is a network of malware-infected devices ('bots' or 'zombies') controlled remotely by an attacker, often used to launch large-scale DDoS attacks, send spam, or mine cryptocurrency without the owners' knowledge."]},
+
+    {"tag": "what_is_cryptojacking", "patterns": ["what is cryptojacking", "crypto mining malware", "define cryptojacking"],
+     "responses": ["Cryptojacking is unauthorized use of someone's computer to mine cryptocurrency, usually via malicious scripts on compromised websites or software, causing high CPU usage and slower performance for the victim."]},
+
+    {"tag": "what_is_ddos", "patterns": ["what is a ddos attack", "define ddos", "how does ddos work", "difference between dos and ddos"],
+     "responses": ["A DDoS (Distributed Denial of Service) attack floods a target server with massive traffic from many compromised devices (often a botnet), overwhelming it so legitimate users can't access the service. A DoS attack is the same concept from a single source. Defenses include traffic filtering, rate limiting, and CDN/DDoS-protection services like Cloudflare."]},
+
+    {"tag": "what_is_mitm", "patterns": ["what is man in the middle attack", "define mitm attack", "how does mitm work"],
+     "responses": ["A Man-in-the-Middle (MITM) attack occurs when an attacker secretly intercepts and possibly alters communication between two parties who believe they're communicating directly — common on unsecured public Wi-Fi. Use HTTPS, VPNs, and certificate validation to defend against it."]},
+
+    {"tag": "what_is_spoofing", "patterns": ["what is spoofing", "ip spoofing meaning", "email spoofing meaning", "dns spoofing meaning"],
+     "responses": ["Spoofing is impersonating a trusted source's identity — faking an IP address, email sender, or DNS response — to trick systems or users into trusting malicious traffic. Email authentication (SPF, DKIM, DMARC) and network monitoring help detect it."]},
+
+    {"tag": "what_is_sql_injection", "patterns": ["what is sql injection", "define sql injection", "how does sql injection work", "sqli meaning"],
+     "responses": ["SQL Injection is a web vulnerability where attackers insert malicious SQL code into input fields to manipulate a database — potentially reading, modifying, or deleting data. Developers prevent it using parameterized queries/prepared statements, input validation, and least-privilege database accounts. I can't provide working injection payloads, but I'm happy to explain secure coding practices to prevent it."]},
+
+    {"tag": "what_is_xss", "patterns": ["what is xss attack", "cross site scripting meaning", "define xss"],
+     "responses": ["Cross-Site Scripting (XSS) injects malicious scripts into trusted websites that then execute in other users' browsers, potentially stealing cookies or session tokens. Defenses include output encoding, Content Security Policy (CSP), and input sanitization."]},
+
+    {"tag": "what_is_csrf", "patterns": ["what is csrf attack", "cross site request forgery meaning", "define csrf vulnerability"],
+     "responses": ["Cross-Site Request Forgery (CSRF) tricks a logged-in user's browser into unknowingly submitting a malicious request to a site they're authenticated on. Anti-CSRF tokens and SameSite cookies are standard defenses."]},
+
+    {"tag": "what_is_zero_day", "patterns": ["what is a zero day exploit", "zero day vulnerability meaning", "define zero day attack"],
+     "responses": ["A zero-day vulnerability is a software flaw unknown to the vendor, so no patch exists yet — attackers exploiting it have a window of opportunity before it's discovered and fixed. Timely patch management and intrusion detection reduce exposure."]},
+
+    {"tag": "what_is_buffer_overflow", "patterns": ["what is a buffer overflow", "buffer overflow attack meaning", "define buffer overflow vulnerability"],
+     "responses": ["A buffer overflow occurs when a program writes more data to a memory buffer than it can hold, corrupting adjacent memory — attackers can exploit this to crash programs or execute arbitrary code. Modern defenses include stack canaries, ASLR, and safe programming languages/bounds-checking."]},
+
+    {"tag": "social_engineering", "patterns": ["what is social engineering", "define social engineering", "social engineering attack", "how does social engineering work"],
+     "responses": ["Social engineering manipulates human psychology (trust, fear, urgency, curiosity) rather than technical flaws to trick people into revealing confidential information or granting access — phishing, pretexting, baiting, and tailgating are all forms of it."]},
+
+    {"tag": "pretexting_baiting_tailgating", "patterns": ["what is pretexting", "what is baiting attack", "what is tailgating in security", "quid pro quo attack"],
+     "responses": ["Pretexting is inventing a fabricated scenario (e.g., posing as IT support) to extract information. Baiting lures victims with something enticing (a 'free' USB drive loaded with malware). Tailgating is following an authorized person into a secure area without their own credentials. All exploit trust rather than technology."]},
+
+    {"tag": "password_safety", "patterns": ["how to create a strong password", "password tips", "password best practices", "how to make secure password", "safe password ideas"],
+     "responses": ["Strong passwords should be at least 12-16 characters, mix upper/lowercase letters, numbers and symbols, avoid personal info, and be unique per account. Use a password manager to generate and store them — you shouldn't have to remember dozens of complex passwords yourself."]},
+
+    {"tag": "what_is_2fa", "patterns": ["what is two factor authentication", "what is 2fa", "define mfa", "multi factor authentication meaning"],
+     "responses": ["Two-Factor Authentication (2FA) requires a second verification step beyond your password — like an OTP, authenticator app code, or hardware key — making accounts far harder to compromise even if the password leaks. Multi-Factor Authentication (MFA) extends this with even more factors (something you know, have, and are)."]},
+
+    {"tag": "biometric_auth", "patterns": ["what is biometric authentication", "fingerprint login security", "face id security"],
+     "responses": ["Biometric authentication uses unique physical traits — fingerprints, facial recognition, iris scans — as a login factor. It's convenient and hard to replicate, but unlike passwords, biometric data can't be 'reset' if compromised, so it's best combined with another factor."]},
+
+    {"tag": "password_manager", "patterns": ["what is a password manager", "should i use a password manager", "are password managers safe"],
+     "responses": ["A password manager securely generates, stores, and auto-fills strong unique passwords for every account behind one master password (protected by encryption). Reputable ones (Bitwarden, 1Password, KeePass) are far safer than reusing weak passwords across sites."]},
+
+    {"tag": "safe_browsing", "patterns": ["how to browse safely", "safe browsing tips", "how to stay safe online", "internet safety tips", "safe internet practices"],
+     "responses": ["Use HTTPS sites, keep your browser/OS updated, avoid sensitive transactions on public Wi-Fi, use a VPN when needed, install a reputable ad-blocker/antivirus, and verify a site's URL carefully before entering personal data."]},
+
+    {"tag": "what_is_vpn", "patterns": ["what is a vpn", "define vpn", "vpn meaning", "why use a vpn", "is vpn safe"],
+     "responses": ["A VPN (Virtual Private Network) encrypts your internet traffic and masks your IP address, protecting your data from interception especially on public Wi-Fi — though you should still trust your VPN provider, since they can see your traffic."]},
+
+    {"tag": "what_is_firewall", "patterns": ["what is a firewall", "define firewall", "firewall meaning", "how does a firewall work"],
+     "responses": ["A firewall monitors and controls incoming/outgoing network traffic based on defined security rules, acting as a barrier between trusted internal networks and untrusted external ones (like the internet)."]},
+
+    {"tag": "what_is_ids_ips", "patterns": ["what is ids", "what is ips", "intrusion detection system meaning", "intrusion prevention system meaning"],
+     "responses": ["An Intrusion Detection System (IDS) monitors network/system traffic for suspicious activity and alerts admins. An Intrusion Prevention System (IPS) goes further by actively blocking detected threats in real time."]},
+
+    {"tag": "what_is_honeypot", "patterns": ["what is a honeypot", "define honeypot in security", "honeypot meaning cybersecurity"],
+     "responses": ["A honeypot is a decoy system deliberately left vulnerable to attract attackers, allowing security teams to study their techniques and divert them away from real production systems."]},
+
+    {"tag": "encryption_vs_hashing", "patterns": ["difference between encryption and hashing", "what is encryption", "what is hashing", "encryption vs hashing"],
+     "responses": ["Encryption is reversible — data is scrambled with a key and can be decrypted back to its original form. Hashing is one-way — it converts data into a fixed-length digest that cannot be reversed, which is why passwords are hashed (not encrypted) before storage."]},
+
+    {"tag": "symmetric_vs_asymmetric", "patterns": ["symmetric vs asymmetric encryption", "what is public key cryptography", "how does asymmetric encryption work"],
+     "responses": ["Symmetric encryption uses the same key to encrypt and decrypt (fast, but the key must be shared securely — e.g., AES). Asymmetric encryption uses a public key to encrypt and a private key to decrypt (used in HTTPS, digital signatures — e.g., RSA), solving the key-distribution problem at the cost of speed."]},
+
+    {"tag": "what_is_digital_signature", "patterns": ["what is a digital signature", "how do digital signatures work", "digital signature meaning"],
+     "responses": ["A digital signature uses asymmetric cryptography to verify the authenticity and integrity of a message or document — the sender signs with their private key, and anyone can verify it with the corresponding public key, proving it wasn't tampered with."]},
+
+    {"tag": "what_is_ssl_tls", "patterns": ["what is ssl", "what is tls", "difference between ssl and tls", "how does https work"],
+     "responses": ["SSL/TLS are cryptographic protocols that encrypt data between your browser and a website (the 'S' in HTTPS). TLS is the modern, more secure successor to SSL. They use a combination of asymmetric encryption (to exchange keys) and symmetric encryption (to encrypt the actual session data)."]},
+
+    {"tag": "what_is_pki_certificates", "patterns": ["what is pki", "what is a digital certificate", "what is a ca certificate authority"],
+     "responses": ["Public Key Infrastructure (PKI) is the system of digital certificates, Certificate Authorities (CAs), and keys used to establish trust online. A CA issues certificates that verify a website's identity, which your browser checks before establishing a secure HTTPS connection."]},
+
+    {"tag": "identity_theft", "patterns": ["what is identity theft", "how to prevent identity theft", "identity theft meaning"],
+     "responses": ["Identity theft occurs when someone steals your personal information (ID numbers, bank details) to commit fraud in your name. Protect yourself by limiting oversharing online, shredding sensitive documents, and monitoring your credit/bank statements regularly."]},
+
+    {"tag": "public_wifi", "patterns": ["is public wifi safe", "public wifi risks", "how to use public wifi safely"],
+     "responses": ["Public Wi-Fi is often unencrypted, making it easy for attackers to intercept traffic via MITM attacks. Avoid logging into sensitive accounts on public Wi-Fi, or use a VPN to encrypt your connection when you must."]},
+
+    {"tag": "network_segmentation_zero_trust", "patterns": ["what is network segmentation", "what is zero trust security", "zero trust model meaning"],
+     "responses": ["Network segmentation divides a network into isolated zones so a breach in one segment can't easily spread to others. Zero Trust security assumes no user or device is automatically trusted, requiring continuous verification for every access request, regardless of whether it originates inside or outside the network."]},
+
+    {"tag": "patch_management", "patterns": ["what is patch management", "why is software updating important", "importance of updates security"],
+     "responses": ["Patch management is the process of regularly updating software/OS to fix known security vulnerabilities. Most breaches exploit vulnerabilities that already had patches available — keeping systems updated is one of the single most effective defenses."]},
+
+    {"tag": "endpoint_protection", "patterns": ["what is endpoint protection", "what is antivirus edr", "endpoint detection and response meaning"],
+     "responses": ["Endpoint protection secures individual devices (laptops, phones, servers) against threats using antivirus, EDR (Endpoint Detection & Response), and device policies — critical since endpoints are common entry points for attackers."]},
+
+    {"tag": "what_is_ethical_hacking", "patterns": ["what is ethical hacking", "define ethical hacking", "what does an ethical hacker do", "is hacking legal"],
+     "responses": ["Ethical hacking is authorized, legal testing of systems to find and fix security weaknesses before malicious hackers exploit them, always performed with explicit written permission from the system owner. Unauthorized hacking — even 'just looking' — is illegal in virtually every country, including under Sri Lanka's Computer Crimes Act No. 24 of 2007."]},
+
+    {"tag": "penetration_testing", "patterns": ["what is penetration testing", "pentest phases", "how does a pentest work", "what is a pen tester"],
+     "responses": ["Penetration testing simulates real attacks against a system (with permission) to identify exploitable weaknesses. The typical phases are: 1) Reconnaissance, 2) Scanning, 3) Gaining Access, 4) Maintaining Access, 5) Reporting/Remediation — always within a legally signed scope of engagement."]},
+
+    {"tag": "red_blue_purple_team", "patterns": ["what is red team", "what is blue team", "red team vs blue team", "what is purple team"],
+     "responses": ["A Red Team simulates attackers to test defenses offensively. A Blue Team defends and monitors systems, responding to detected threats. A Purple Team facilitates collaboration between the two to improve overall security posture."]},
+
+    {"tag": "bug_bounty", "patterns": ["what is bug bounty", "how do bug bounty programs work", "how to start bug bounty hunting"],
+     "responses": ["Bug bounty programs let ethical hackers legally find and report vulnerabilities in a company's systems in exchange for recognition or monetary rewards, run through platforms like HackerOne or Bugcrowd, always within the company's defined scope and rules."]},
+
+    {"tag": "ctf_competitions", "patterns": ["what is ctf in cybersecurity", "capture the flag hacking", "how to practice ethical hacking legally"],
+     "responses": ["CTFs (Capture The Flag) are legal gamified cybersecurity competitions where participants solve challenges (cryptography, web exploitation, reverse engineering, forensics) in isolated practice environments — a great, fully legal way to build hacking skills. Platforms like TryHackMe, HackTheBox, and picoCTF are popular starting points."]},
+
+    {"tag": "security_certifications", "patterns": ["what certifications should i get for cybersecurity", "what is ceh certification", "what is oscp", "what is comptia security plus", "best cybersecurity certifications"],
+     "responses": ["Popular cybersecurity certifications include CompTIA Security+ (beginner-friendly foundation), CEH — Certified Ethical Hacker (offensive concepts), OSCP — Offensive Security Certified Professional (hands-on pentesting, highly respected), CISSP (management/advanced), and CompTIA PenTest+. Start with Security+ if you're new to the field."]},
+
+    {"tag": "cybersecurity_career", "patterns": ["how to start a career in cybersecurity", "how to become an ethical hacker", "cybersecurity job roles"],
+     "responses": ["Common cybersecurity career paths include SOC Analyst, Penetration Tester, Security Engineer, Incident Responder, and Security Auditor. Start by learning networking fundamentals, Linux, a scripting language (Python), then move into a specialty (offensive/defensive) and pursue relevant certifications and legal CTF practice."]},
+
+    {"tag": "cyber_laws", "patterns": ["what are cyber laws", "sri lanka computer crimes act", "is hacking a crime", "cyber crime laws"],
+     "responses": ["Most countries criminalize unauthorized access to computer systems. In Sri Lanka, the Computer Crimes Act No. 24 of 2007 makes unauthorized access, data interference, and system sabotage criminal offenses. Always obtain explicit written authorization before testing any system you don't own."]},
+
+    {"tag": "gdpr_data_privacy", "patterns": ["what is gdpr", "data privacy laws", "personal data protection act"],
+     "responses": ["GDPR (General Data Protection Regulation) is an EU law governing how organizations collect, store, and process personal data, giving individuals rights over their own information. Many countries, including Sri Lanka (Personal Data Protection Act No. 9 of 2022), have adopted similar frameworks."]},
+
+    {"tag": "responsible_disclosure", "patterns": ["what is responsible disclosure", "how to report a vulnerability ethically", "coordinated vulnerability disclosure meaning"],
+     "responses": ["Responsible (coordinated) disclosure means privately reporting a discovered vulnerability to the affected organization and giving them reasonable time to fix it before any public disclosure — the ethical standard for handling security findings."]},
+
+    {"tag": "cloud_security", "patterns": ["what is cloud security", "how to secure cloud data", "shared responsibility model cloud"],
+     "responses": ["Cloud security protects data, applications, and infrastructure hosted on cloud platforms (AWS, Azure, GCP). It operates on a Shared Responsibility Model — the provider secures the underlying infrastructure, while the customer is responsible for securing their data, access controls, and configurations."]},
+
+    {"tag": "iot_security", "patterns": ["what is iot security", "are smart devices safe", "iot device vulnerabilities"],
+     "responses": ["IoT (Internet of Things) devices — smart cameras, thermostats, routers — often ship with weak default passwords and infrequent updates, making them common botnet targets (e.g., the Mirai botnet). Always change default credentials and keep firmware updated."]},
+
+    {"tag": "mobile_security", "patterns": ["how to secure my phone", "mobile app security tips", "app permissions security"],
+     "responses": ["Secure your phone by keeping the OS updated, only installing apps from official stores, reviewing app permissions (does a flashlight app really need your contacts?), using a screen lock, and enabling remote wipe in case of loss or theft."]},
+
+    {"tag": "incident_response", "patterns": ["what is incident response", "steps of incident response", "what to do after a data breach"],
+     "responses": ["Incident Response typically follows: 1) Preparation, 2) Identification, 3) Containment, 4) Eradication, 5) Recovery, 6) Lessons Learned. After a breach: isolate affected systems, change credentials, notify affected parties, and analyze root cause to prevent recurrence."]},
+
+    {"tag": "backup_disaster_recovery", "patterns": ["how often should i backup", "3-2-1 backup rule", "what is disaster recovery plan"],
+     "responses": ["The 3-2-1 backup rule: keep 3 copies of your data, on 2 different media types, with 1 copy offsite/offline — this protects against ransomware, hardware failure, and disasters simultaneously. A disaster recovery plan defines how an organization restores operations after a major disruption."]},
+
+    {"tag": "dark_web", "patterns": ["what is the dark web", "difference between deep web and dark web", "is the dark web illegal"],
+     "responses": ["The deep web is simply any content not indexed by search engines (like your online banking portal). The dark web is a small encrypted portion of it, accessible only via tools like Tor, associated with both illegal marketplaces and legitimate uses like anonymous journalism and whistleblowing. Visiting it isn't itself illegal, but many activities there are."]},
+
+    {"tag": "deepfake_ai_threats", "patterns": ["what is a deepfake", "ai threats in cybersecurity", "how is ai used in cyberattacks"],
+     "responses": ["Deepfakes use AI to create convincing fake video/audio of real people, increasingly used in scams (fake CEO voice authorizing a wire transfer). AI is also used defensively for anomaly detection, and offensively to write more convincing phishing emails or automate attacks — an evolving arms race in cybersecurity."]},
+
+    {"tag": "supply_chain_attack", "patterns": ["what is a supply chain attack", "solarwinds attack explanation", "define supply chain cyberattack"],
+     "responses": ["A supply chain attack compromises a trusted third-party vendor or software update mechanism to distribute malware to that vendor's customers — the 2020 SolarWinds attack is a famous example, where a legitimate software update was tampered with to compromise thousands of organizations."]},
+
+    {"tag": "quiz_request", "patterns": ["i want to take a quiz", "start quiz", "test my knowledge", "give me a quiz", "quiz me"],
+     "responses": ["Great! Head over to the Quiz section from the sidebar to test your cybersecurity knowledge."]},
+
+    {"tag": "tips_request", "patterns": ["give me a security tip", "tell me a tip", "cybersecurity tip please", "random tip"],
+     "responses": ["Check out the Security Tips section for daily cybersecurity advice!"]},
+
+    {"tag": "link_check_request", "patterns": ["can you check this link", "is this url safe", "check suspicious link", "scan this link for me"],
+     "responses": ["Sure! Please use the Link Checker section and paste the URL there, and I'll analyze it for suspicious patterns using the ML phishing detector."]},
+
+    {"tag": "code_password_checker", "patterns": ["give me code to check password strength", "python code password strength checker", "code for password validator"],
+     "responses": ["Here's a simple Python password strength checker:\n\n```python\nimport re\n\ndef check_password_strength(password):\n    score = 0\n    if len(password) >= 12:\n        score += 1\n    if re.search(r'[A-Z]', password):\n        score += 1\n    if re.search(r'[a-z]', password):\n        score += 1\n    if re.search(r'[0-9]', password):\n        score += 1\n    if re.search(r'[!@#$%^&*(),.?\":{}|<>]', password):\n        score += 1\n\n    levels = ['Very Weak', 'Weak', 'Fair', 'Good', 'Strong', 'Very Strong']\n    return levels[score]\n\nprint(check_password_strength('MyP@ssw0rd123'))\n```"]},
+
+    {"tag": "code_hash_generator", "patterns": ["give me code to hash a password", "python code for sha256 hash", "code to generate hash of a string"],
+     "responses": ["Here's how to hash data securely in Python using SHA-256 with a salt (never store plain passwords!):\n\n```python\nimport hashlib, secrets\n\ndef hash_password(password):\n    salt = secrets.token_hex(16)\n    hashed = hashlib.sha256((salt + password).encode()).hexdigest()\n    return hashed, salt\n\nhashed, salt = hash_password('MySecurePass123')\nprint('Hash:', hashed)\nprint('Salt:', salt)\n```"]},
+
+    {"tag": "code_caesar_cipher", "patterns": ["give me code for caesar cipher", "python code caesar cipher encryption", "simple encryption code example"],
+     "responses": ["Here's a classic Caesar Cipher (a simple substitution cipher, great for learning cryptography basics — not for real security):\n\n```python\ndef caesar_encrypt(text, shift):\n    result = ''\n    for char in text:\n        if char.isalpha():\n            base = ord('A') if char.isupper() else ord('a')\n            result += chr((ord(char) - base + shift) % 26 + base)\n        else:\n            result += char\n    return result\n\nencrypted = caesar_encrypt('Hello CriptX', 3)\nprint(encrypted)  # Khoor FulswA\n```"]},
+
+    {"tag": "code_secure_random_password", "patterns": ["give me code to generate a secure random password", "python code random password generator", "code to create a strong password automatically"],
+     "responses": ["Here's a secure random password generator using Python's `secrets` module (cryptographically strong randomness):\n\n```python\nimport secrets, string\n\ndef generate_password(length=16):\n    alphabet = string.ascii_letters + string.digits + string.punctuation\n    return ''.join(secrets.choice(alphabet) for _ in range(length))\n\nprint(generate_password(16))\n```"]},
+
+    {"tag": "code_aes_encryption", "patterns": ["give me code for aes encryption", "python code to encrypt and decrypt a file", "fernet encryption example code"],
+     "responses": ["Here's symmetric encryption/decryption using Python's `cryptography` library (Fernet, built on AES):\n\n```python\nfrom cryptography.fernet import Fernet\n\nkey = Fernet.generate_key()\ncipher = Fernet(key)\n\ntoken = cipher.encrypt(b'Confidential message')\nprint('Encrypted:', token)\n\ndecrypted = cipher.decrypt(token)\nprint('Decrypted:', decrypted.decode())\n```\n\nInstall first with: `pip install cryptography`"]},
+
+    {"tag": "malicious_code_refusal", "patterns": ["write me a keylogger", "give me a ddos script", "sql injection exploit code to hack a site", "how to hack a facebook account", "crack wifi password code", "give me ransomware code", "phishing page html code to steal login", "write me malware", "give me a virus code", "how to ddos someone", "code to bruteforce a password", "write me an exploit"],
+     "responses": ["I can't provide working malware, exploit code, or attack scripts — even for educational framing — since that could cause real harm if misused. What I can do instead: explain how the attack works conceptually, show you how to defend against it, or point you toward safe legal practice environments like TryHackNet, HackTheBox, or picoCTF where you can learn hands-on ethical hacking skills legally and safely."]},
+
+    {"tag": "unknown", "patterns": ["what is the weather today", "who is the president", "what is your favorite food", "sing a song", "recommend a movie", "what is the capital of france"],
+     "responses": ["I'm specialized in cybersecurity and ethical hacking topics. Try asking me about phishing, malware, encryption, penetration testing, certifications, or ask for a safe educational code snippet!"]}
+  ]
+}
