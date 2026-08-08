@@ -10,7 +10,7 @@ DB_CONFIG = {
     "host": "localhost",
     "port": 3306,
     "user": "root",
-    "password": "1234",          # <-- set your MySQL root/user password here
+    "password": "",          # <-- set your MySQL root/user password here
     "database": "criptx_db",
 }
 
