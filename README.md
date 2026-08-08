@@ -8,30 +8,6 @@ real-time cyber-news feed, interactive quizzes, and an admin content panel.
 
 ---
 
-## 🆕 What's new in v2.0
-
-| Your request | What was built |
-|---|---|
-| MySQL instead of SQLite | Full MySQL backend (`database.py` + `config.py` + `mysql_schema.sql`) |
-| "Dataset is not enough" | Knowledge base expanded from 19 → **81 intents / 320+ training phrases**, covering malware families, network & web attacks, social engineering, cryptography, ethical hacking, certifications, cyber law, cloud/IoT/mobile security, incident response, and more |
-| "Work in real time... automatically" | ⏰ Live time/date answers, 🕵️ auto-generated jokes, and a new **Live Threat Intel Feed** tab that automatically pulls real cybersecurity news headlines in the background every 5 minutes — no button press needed |
-| "Get codes" | Chatbot now returns nicely formatted, **copyable, syntax-highlighted code blocks** for legitimate security code: password strength checkers, secure hashing, Caesar cipher, secure random password generation, AES/Fernet encryption demos |
-| "Personal assistant" feel | Bot-identity/capabilities intents, live time/date, jokes, and the always-on news feed give it a more assistant-like, always-available character |
-
-### ⚠️ One thing I did **not** build (and why)
-You mentioned wanting "all details about hacking" and actual attack **code**.
-I've made the chatbot extremely knowledgeable about *how* attacks work,
-*how to defend against them*, certifications, and legal ways to practice
-(CTFs, bug bounties, HackTheBox/TryHackMe). But I deliberately did **not**
-add working exploit code, malware, keyloggers, DDoS scripts, or credential-
-stealing tools — even framed as "educational" — because that code causes
-the same real-world harm regardless of intent, and I can't respond
-differently based on a stated purpose. If you ask the chatbot for something
-like that, it now explicitly explains this and redirects you to legal
-practice platforms instead. Everything else you asked for is fully built.
-
----
-
 ## 🧠 The Machine Learning Components
 
 ### 1. Chatbot Intent Classifier (`ml/train_intent_model.py`)
