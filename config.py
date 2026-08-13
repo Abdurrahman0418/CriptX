@@ -3,7 +3,7 @@ config.py
 MySQL connection settings for CriptX.
 
 Edit these values to match your MySQL server. Defaults below match a
-typical local XAMPP/MySQL install (host=localhost, user=root, no password).
+typical local XAMPP/MySQL install (host=localhost, user=root, password).
 """
 
 DB_CONFIG = {
