@@ -1,5 +1,5 @@
 # 🛡️ CriptX — AI-Powered Cybersecurity Awareness Chatbot
-### Final Year Machine Learning Project | HNDIT1052 | v2.0 (MySQL Edition)
+### Final Year Machine Learning Project | HNDIT1052
 
 A colorful, animated desktop application (Python + CustomTkinter + MySQL)
 that teaches users cybersecurity and ethical hacking awareness through an
